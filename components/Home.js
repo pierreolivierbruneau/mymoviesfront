@@ -44,7 +44,7 @@ function Home() {
    fetch('https://mymoviesback-five.vercel.app/movies')
      .then(response => response.json())
      .then(data => {
-       setMoviesData(data.data.results);
+       setMoviesData(data.movies);
        
      });
  }, []);
