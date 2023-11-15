@@ -41,7 +41,7 @@ function Home() {
 //  const [users, setUsers] = useState([]);
 
  useEffect(() => {
-   fetch('http://localhost:3000/movies')
+   fetch('https://mymoviesback-five.vercel.app/movies')
      .then(response => response.json())
      .then(data => {
        setMoviesData(data.data.results);
